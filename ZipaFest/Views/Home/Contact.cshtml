@@ -1,0 +1,71 @@
+@{
+    ViewData["Title"] = "Contacto";
+    Layout = "_Layout";
+}
+
+<main>
+    <section class="contacto">
+        <!-- NOTA: Si estos elementos de fondo no aparecen, asegúrate de que las rutas en el archivo Contact.css también estén corregidas. -->
+        <div class="bg-grid"></div>
+        <div class="contacto-fondo"></div>
+
+        <div class="contacto__panel">
+            <!-- Columna izquierda: Título + Form -->
+            <div class="contacto__left">
+                <h2 class="contacto__title">
+                    <span>CONTÁCTANOS</span>
+                </h2>
+
+                <form class="contacto__form" action="#" method="post">
+                    <label class="input">
+                        <span>Nombre</span>
+                        <input type="text" name="nombre" placeholder="Tu nombre" required />
+                    </label>
+
+                    <label class="input">
+                        <span>Correo electrónico</span>
+                        <input type="email" name="email" placeholder="tucorreo@dominio.com" required />
+                    </label>
+
+                    <label class="input">
+                        <span>Mensaje</span>
+                        <textarea name="mensaje" rows="3" placeholder="Cuéntanos en qué podemos ayudarte" required></textarea>
+                    </label>
+
+                    <button class="btn" type="submit" aria-label="Enviar formulario de contacto">ENVIAR</button>
+                </form>
+            </div>
+
+            <!-- Columna derecha: Franja amarilla + tarjeta info -->
+            <div class="contacto__right">
+                <div class="contacto__stripe" aria-hidden="true"></div>
+
+                <!-- Pizza superpuesta -->
+                <!-- CORRECCIÓN: Se ajustó la ruta de la imagen para que funcione en ASP.NET Core -->
+                <img class="contacto__pizza"
+                     src="~/img/AboutUs/PIZZA_RECORTE.png"
+                     alt="Rebanada de pizza decorativa" />
+
+                <!-- Tarjeta de información -->
+                <aside class="card">
+                    <h3>Información</h3>
+                    <p><a href="mailto:atencionalcliente@zqpfest.com">atencionalcliente@zqpfest.com</a></p>
+                    <p><a href="tel:+573017570783">+57 301 757 0783</a></p>
+                    <p>
+                        Calle 4 # 11-01<br />
+                        Sábados, domingos y festivos<br />
+                        10:00 a. m. a 2:00 p. m.
+                    </p>
+                </aside>
+
+                <!-- Redes -->
+                <div class="social">
+                    <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

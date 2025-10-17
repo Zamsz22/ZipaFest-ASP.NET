@@ -1,0 +1,498 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ranchers&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Nohemi:wght@700;&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+
+/* ========================================================================== */
+/*                                SECCIÓN GENERAL                             */
+/* ========================================================================== */
+.histories-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+
+/* ========================================================================== */
+/*                            MUÑECOS DECORATIVOS                             */
+/* ========================================================================== */
+.muneco1 {
+  position: absolute;
+  top: 250px;
+  left: -70px;
+  width: 300px;
+  height: 300px;
+  background: url(../img/AboutUs/muñeco1.svg) no-repeat center;
+  background-size: contain;
+  z-index: 2;
+}
+
+.muneco2 {
+  position: absolute;
+  top: 180px;
+  right: -40px;
+  width: 180px;
+  height: 180px;
+  background: url(../img/AboutUs/muñeco1.svg) no-repeat center;
+  background-size: contain;
+  transform: rotate(180deg);
+  z-index: 2;
+}
+
+.muneco3 {
+  position: absolute;
+  top: 1180px;
+  right: -100px;
+  width: 500px;
+  height: 500px;
+  background: url(../img/AboutUs/muñeco2.svg) no-repeat center;
+  background-size: contain;
+  z-index: 2;
+}
+
+.muneco4 {
+  position: absolute;
+  top: 1180px;
+  left: -65px;
+  width: 300px;
+  height: 300px;
+  transform: rotate(180deg);
+  background: url(../img/AboutUs/muñeco2.svg) no-repeat center;
+  background-size: contain;
+  z-index: 2;
+}
+
+
+/* ========================================================================== */
+/*                                 TÍTULO DE LA SECCIÓN                       */
+/* ========================================================================== */
+.histories-title {
+  padding: 200px 80px 0px 80px;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 5;
+}
+
+.histories-title .kicker,
+.histories-title .main {
+  font-family:'BBH Sans Hegarty', sans-serif;
+  text-transform: uppercase;
+  color: #333;
+  line-height: 1;
+  display: block;
+}
+.histories-title .kicker {
+  font-size: clamp(36px, 5vw, 48px);
+}
+.histories-title .main {
+  font-size: clamp(60px, 9vw, 90px);
+}
+
+.histories-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ========================================================================== */
+/*                             LÍNEA DE TIEMPO PRINCIPAL                      */
+/* ========================================================================== */
+.linea-tiempo {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 150px;
+  background: url('../img/AboutUs/recursos_aboutus/guia.png') no-repeat center top;
+  background-size: contain;
+  background-origin: content-box;
+  gap: 270px;
+}
+
+/* ========================================================================== */
+/*                                BLOQUES DE LA HISTORIA                      */
+/* ========================================================================== */
+.bloque {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.bloque-izquierda {
+  max-width: 900px;
+  justify-content: flex-start;
+  margin-left: -650px;
+  transform: translateX(50%);
+  top: 200px;
+}
+
+.bloque-derecha {
+  max-width: 900px;
+  justify-content: flex-end;
+  margin-left: 700px;
+  transform: translateX(-25%);
+  top: 100px;
+}
+
+.bloque-izquierda2 {
+  max-width: 900px;
+  justify-content: flex-start;
+  margin-right: 500px;
+  transform: translateX(30%);
+  top: 50px;
+  margin-bottom: 45px;
+}
+
+/* ========================================================================== */
+/*                                TARJETAS DE CONTENIDO                       */
+/* ========================================================================== */
+.tarjeta {
+  position: relative;
+  width: 320px;
+  height: 220px;
+  border-radius: 20px;
+  padding: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* ========================================================================== */
+/*                             TEXTO DENTRO DE LAS TARJETAS                   */
+/* ========================================================================== */
+.inforojo {
+    position: absolute;
+    width: calc(100% - 40px);
+    max-width: 280px;
+    text-align: center;
+    color: #fff0d6;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -110%);
+    z-index: 3;
+}
+
+.infoverde {
+    position: absolute;
+    width: calc(100% - 40px);
+    max-width: 280px;
+    text-align: center;
+    color: #fff0d6;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -110%);
+    z-index: 3;
+}
+
+.infoazul {
+    position: absolute;
+    width: calc(100% - 40px);
+    max-width: 280px;
+    text-align: center;
+    color: #fff0d6;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -110%);
+    z-index: 3;
+}
+
+.inforojo h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Nohemi', sans-serif;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.inforojo p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #fff0d6;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.infoverde h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Nohemi', sans-serif;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.infoverde p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #fff0d6;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.infoazul h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Nohemi', sans-serif;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.infoazul p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #fff0d6;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* ========================================================================== */
+/*                             IMÁGENES DE FONDO EN TARJETAS                  */
+/* ========================================================================== */
+.imagen_pizza,
+.imagen_torta,
+.imagen_burguer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+  z-index: 1;
+}
+
+.imagen_pizza {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+}
+
+.imagen_burguer {
+  width: 100%;
+  height: auto;
+  max-height: 450px;
+}
+
+.imagen_torta {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+}
+
+
+/* ========================================================================== */
+/*                           AJUSTES RESPONSIVOS                              */
+/* ========================================================================== */
+
+/* --- Escritorio Grande (más de 1200px) --- */
+@media (max-width: 1201px) {
+  .bloque-izquierda { 
+    transform: translateX(35%);
+  
+  }
+  .bloque-derecha { 
+    transform: translateX(-35%); 
+  }
+  .bloque-izquierda2 { 
+    transform: translateX(35%); 
+  }
+
+}
+
+/* --- Tablet (hasta 980px) --- */
+@media (max-width: 980px) {
+  .linea-tiempo {
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    gap: 80px;
+    padding-top: 30px;
+    padding-bottom: 80px;
+  }
+
+  .bloque,
+  .bloque-izquierda,
+  .bloque-izquierda2,
+  .bloque-derecha {
+    position: static;
+    transform: none;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    justify-content: center;
+    top: auto;
+    bottom: auto;
+  }
+
+  .tarjeta {
+    width: 100%;
+    height: 650px;
+    padding: 20px;
+  }
+
+  .inforojo {
+    position: absolute;
+    transform: none;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    left: 75px;
+    top: 60px;
+  }
+
+  .inforojo h3 {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .inforojo p {
+    text-align: center;
+    width: 90%;
+    max-width: 300px;
+  }
+
+    .infoverde {
+    position: absolute;
+    transform: none;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    left: 65px;
+    top: 100px;
+  }
+
+  .infoverde h3 {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .infoverde p {
+    text-align: center;
+    width: 90%;
+    max-width: 300px;
+  }
+
+.infoazul {
+    position: absolute;
+    transform: none;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    left: 75px;
+    top: 130px;
+  }
+
+  .infoazul h3 {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .infoazul p {
+    text-align: center;
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .imagen_pizza,
+  .imagen_torta,
+  .imagen_burguer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+  z-index: 1;
+  }
+
+
+}
+
+/* --- Móvil (hasta 640px) --- */
+@media (max-width: 640px) {
+  .histories-title {
+    padding-top: 150px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 150px;
+  }
+
+  .histories-title .kicker {
+    font-size: 30px;
+  }
+  .histories-title .main {
+    font-size: 50px;
+  }
+
+  .linea-tiempo {
+    gap: 40px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+
+  .tarjeta {
+    height: 380px;
+    padding: 15px;
+    margin-bottom: 100px;
+  }
+
+  .inforojo {
+    top: -90px;
+    right: 80px;
+    max-width: 250px;
+  }
+
+  .infoverde {
+    top: -40px;
+    right: 80px;
+    max-width: 250px;
+  }
+
+  .infoazul {
+    top: -20px;
+    right: 80px;
+    max-width: 250px;
+  }
+
+  .info h3 {
+    font-size: 16px;
+  }
+
+  .info p {
+    font-size: 10px;
+  }
+}

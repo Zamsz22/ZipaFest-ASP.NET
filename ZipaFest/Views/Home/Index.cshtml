@@ -1,0 +1,213 @@
+﻿@{
+    ViewData["Title"] = "Inicio";
+    Layout = "_Layout";
+}
+
+<main>
+    <style>
+       
+        header {
+            background: transparent;
+        }
+    </style>
+    <!-- ======================= HERO SLIDER SECTION ======================= -->
+    <section class="hero-section">
+        
+        <div class="hero-container">
+            <div class="hero-slider">
+                <div class="slide-image-bg scroll-reveal" data-delay="200">
+                  
+                    <img src="~/img/BannerSlider/verduras3.png" alt="">
+                </div>
+                <ul>
+                    <li class="slide">
+                        <div class="slide-text scroll-reveal" data-delay="500">
+                            <h2>BURGER MASTER</h2>
+                            <p>
+                                El Burger Fest es un evento culinario que celebra la diversidad y creatividad
+                                en el mundo de las hamburguesas. Durante este festival, los amantes de las
+                                hamburguesas pueden disfrutar de una amplia variedad de opciones gastronómicas.
+                            </p>
+                        </div>
+                        <div class="slide-image scroll-reveal" data-delay="400">
+                            <!-- Esta ruta ya estaba correcta -->
+                            <img src="~/img/BannerSlider/BurguerMaster.png" alt="Burger Master">
+                        </div>
+                    </li>
+
+                    <li class="slide">
+                        <div class="slide-text scroll-reveal" data-delay="100">
+                            <h2>COFFEE MASTER</h2>
+                            <p>
+                                El Coffee Master es un evento especial que honra la técnica y el arte
+                                en el mundo del café. Durante este encuentro, los amantes del café
+                                pueden disfrutar de distintas preparaciones y aromas excepcionales.
+                            </p>
+                        </div>
+                        <div class="slide-image img-cafe scroll-reveal" data-delay="1">
+                            <!-- Esta ruta ya estaba correcta -->
+                            <img src="~/img/BannerSlider/cafe_fly@3x.png" alt="Coffee Master">
+                        </div>
+                    </li>
+
+                    <li class="slide">
+                        <div class="slide-text img-cafe scroll-reveal" data-delay="50">
+                            <h2>PIZZA FEST</h2>
+                            <p>
+                                El Pizza Fest es un evento gastronómico que celebra la pasión y originalidad
+                                en el mundo de las pizzas. Durante este festival, los fanáticos de la
+                                pizza pueden disfrutar de una gran variedad de sabores y combinaciones únicas.
+                            </p>
+                        </div>
+                        <div class="slide-image img-pizza scroll-reveal" data-delay="1">
+                            <!-- CORRECCIÓN: Se usa ~/ y se corrige el error tipográfico "pimg" -->
+                            <img src="~/img/BannerSlider/Pizza_fly.png" alt="Pizza Fest">
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- Botones -->
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+        </div>
+        <div class="bg-grid"></div>
+    </section>
+    <!-- ===================== END HERO SLIDER SECTION ===================== -->
+    <!-- ===================== CATEGORIES SECTION ===================== -->
+    <section class="categories-section" id="categories">
+       
+        <div class="section-title">
+            <h2 class="section-title scroll-reveal" data-delay="200">CATEGORIAS</h2>
+        </div>
+        <div class="categories-grid">
+            <!-- CORRECCIÓN: Se usan Tag Helpers (asp-controller, asp-action) y rutas de imágenes corregidas -->
+            <div class="category-item item-burger">
+                <a asp-controller="Home" asp-action="Burger">
+                    <img src="~/img/Categories/category_1.png" alt="Burger Fest">
+                    <p>Burger Master</p>
+                </a>
+            </div>
+
+            <div class="category-item item-coffee">
+                <a asp-controller="Home" asp-action="Coffee">
+                    <img src="~/img/Categories/category_2.png" alt="Coffee Master">
+                    <p>Coffee Master</p>
+                </a>
+            </div>
+
+            <div class="category-item item-torta">
+                <a asp-controller="Home" asp-action="Cake">
+                    <img src="~/img/Categories/category_4.png" alt="Torta Fest">
+                    <p>Torta Fest</p>
+                </a>
+            </div>
+
+            <div class="category-item item-empanada">
+                <a asp-controller="Home" asp-action="Empanada">
+                    <img src="~/img/Categories/empanadas.png" alt="Empanada Fest" style="padding-bottom: 20px;">
+                    <p>Empanada Fest</p>
+                </a>
+            </div>
+
+            <div class="category-item item-pizza">
+                <a asp-controller="Home" asp-action="Pizza">
+                    <img src="~/img/Categories/category_5.png" alt="Pizza Fest" id="category-border">
+                    <p>Pizza Fest</p>
+                </a>
+            </div>
+
+            <div class="category-center-text">
+                <spline-viewer url="https://prod.spline.design/yfAXxOHQHF6RLDBA/scene.splinecode"></spline-viewer>
+            </div>
+        </div>
+        <div class="bg-grid"></div>
+    </section>
+    <!-- =================== END CATEGORIES SECTION =================== -->
+    <!-- ======================= BANNER SECTION ======================= -->
+    <section class="banner-section">
+        <div class="banner-container">
+            <div class="banner">
+                <!-- CORRECCIÓN: Rutas de imágenes corregidas -->
+                <img src="~/img/Banner/bannerburger.png" alt="" class="cta-burger cta-burger-left">
+                <img src="~/img/Banner/bannerburger.png" alt="" class="cta-burger cta-burger-right">
+                <div class="banner-content scroll-reveal" data-delay="100">
+                    <h2>REGÍSTRATE Y OBTÉN</h2>
+                    <span>CUPONES</span>
+                    <!-- CORRECCIÓN: Enlace con Tag Helpers -->
+                    <a asp-controller="Home" asp-action="Rewards" class="cta-link scroll-reveal" data-delay="200">
+                        <span>IR AHORA</span>
+                        <div class="arrow-box"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-280v-400l200 200-200 200Z" /></svg></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===================== END BANNER SECTION ===================== -->
+    <!-- ====================== HISTORY SECTION ======================= -->
+    <section class="history-section">
+        <div class="history-container">
+            <div class="history-image-det scroll-reveal" data-delay="200">
+                <div class="history-image-col">
+                    <!-- CORRECCIÓN: Rutas de imágenes corregidas -->
+                    <img src="~/img/OurHistory/Vegetales.png" alt="" class="cta-table cta-table-vegetales scroll-reveal" data-delay="200">
+                    <img src="~/img/OurHistory/tabla.png" alt="" class="cta-table cta-table-tabla ">
+                </div>
+            </div>
+            <div class="history-content-col">
+                <h2 class="history-title scroll-reveal" data-delay="100">
+                    <span class="scroll-reveal" data-delay="300">NUESTRA</span>
+                    <span class="scroll-reveal" data-delay="500">HISTORIA</span>
+                </h2>
+                <p class="history-text scroll-reveal" data-delay="600">
+                    Reunimos los festivales gastronómicos de Zipaquirá en un solo lugar, para que saborees su tradición y cultura en cada evento.
+                </p>
+                <!-- CORRECCIÓN: Enlace con Tag Helpers -->
+                <a asp-controller="Home" asp-action="AboutUs" class="history-button scroll-reveal" data-delay="800">Conócenos &rarr;</a>
+            </div>
+        </div>
+        <div class="bg-grid"></div>
+    </section>
+    <!-- ==================== END HISTORY SECTION ===================== -->
+    <!-- =================== SOCIAL MEDIA SECTION =================== -->
+    <section class="social-media-section">
+        <div class="container">
+            <div class="social-header">
+                <span class="header-main-text scroll-reveal" data-delay="400">REDES</span>
+                <span class="header-main-text2 scroll-reveal" data-delay="200">SOCIALES</span>
+                <span class="header-handle">ZipaFest</span>
+            </div>
+            <div class="products-showcase">
+                <!-- === TARJETA 1 === -->
+                <div class="flip-card card-burger">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front"></div>
+                        <div class="flip-card-back"></div>
+                    </div>
+                </div>
+                <!-- === TARJETA 2 === -->
+                <div class="flip-card card-empanadas">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front"></div>
+                        <div class="flip-card-back"></div>
+                    </div>
+                </div>
+                <!-- === TARJETA 3 === -->
+                <div class="flip-card card-bebida">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front"></div>
+                        <div class="flip-card-back"></div>
+                    </div>
+                    <div class="social-icons scroll-reveal" data-delay="300">
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-grid"></div>
+    </section>
+    <!-- ================= END SOCIAL MEDIA SECTION ================= -->
+</main>
